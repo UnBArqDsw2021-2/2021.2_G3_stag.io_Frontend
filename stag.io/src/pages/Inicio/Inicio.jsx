@@ -1,7 +1,15 @@
 import './Inicio.css';
 import Mulher from './assets/mulher_inicio.png'
+import { useState } from 'react';
+import Login from '../../components/Login/login';
+
+
 
 function Inicio() {
+  
+  /*const [showLogin,setShowLogin] = useState (false);
+  const handleLogin = ()=>{setShowLogin((showLogin)=>!showLogin),console.log(showLogin)};*/
+
   return (
     <div className="Inicio">
       
@@ -17,7 +25,9 @@ function Inicio() {
                 </ul>
             </div>
             <form class="d-flex">
-              <button class="btn btn-dark buttonLoggin" type="submit">Login</button>
+              <button class="btn btn-dark buttonLoggin" type="submit" size="sm" /*onClick={handleLogin}*/ >
+              <h2 class="titleButton">Login</h2>
+              </button>
             </form>
         </nav>
 

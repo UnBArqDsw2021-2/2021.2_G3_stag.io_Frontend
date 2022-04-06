@@ -1,0 +1,21 @@
+.Login {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar_back{
+    background-color: transparent;
+    min-width: 768px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.buttonEntrar {     
+    background-color: #5E239D;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    font-size: x-large;
+    
+}

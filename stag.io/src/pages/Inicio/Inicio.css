@@ -15,15 +15,24 @@
     background-repeat:no-repeat;
     border: none;
     cursor:pointer;
-    overflow: hidden;     
-    font-size: 1cm;   
+    overflow: hidden; 
+    
+       
 }
 
 .title{
     color: white;
     font-style: 'Poppins', sans-serif;
-    font: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
+    font-size: 2em;
+    
+}
+
+.titleButton{
+    color: white;
+    font-style: 'Poppins', sans-serif;
+    font-size: 0.5em;
+    padding-top: 10px;
     
 }
 
