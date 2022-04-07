@@ -1,0 +1,53 @@
+.card-container {
+    width: 825px;
+    height: 114px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 2rem;
+    background: white;
+    color: black;
+    box-sizing: border-box;
+}
+
+.left-container {
+    float: left;
+}
+
+.right-container {
+    float: right;
+    display: inline-flex;
+}
+
+.card-container .title {
+    border-radius: nullpx;
+    font-family: Poppins;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 53px;
+    text-align: left;
+}
+
+.card-container .company {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-align: justified;
+    padding-top: 2px;
+    padding-left: 9px;
+}
+
+.tag {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin: 3px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 18px;
+    background: rgba(249, 234, 234, 1);
+}
