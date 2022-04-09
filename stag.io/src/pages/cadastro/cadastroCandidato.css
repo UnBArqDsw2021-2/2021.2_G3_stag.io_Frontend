@@ -42,6 +42,20 @@
     align-items: flex-end;
 }
 
+.container-button-2{
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.vags_btn{
+    border-radius: 20%;
+    background-color: #22BE92;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+
 .user_btn{
     background-color: #5E239D;
     border: none;
@@ -67,4 +81,9 @@
 .imagem_usuario{
     height: 28em;
     padding-left: 5em;
+}
+
+.text-areas{
+    color: #00000099;
+    font-style: 'Poppins', sans-serif;
 }

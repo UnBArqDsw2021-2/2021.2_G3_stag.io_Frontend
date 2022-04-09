@@ -1,10 +1,12 @@
 import './cadastroCandidato.css';
-import Usuario from './assets/cadastro_usuario.png'
+import './cadastroEmpresa.css';
+import Empresa from './assets/cadastro_empresa.png'
 
-function CadastroCandidato() {
+function CadastroEmpresa() {
   return (
-    <div className="CadastroCandidato">
+    <div className="CadastroEmpresa">
       
+       
       {/* Barra de Navegação */}
       <nav className="navbar navbar-expand-lg navbar-light">
             <a className="navbar-brand" href="#">
@@ -16,23 +18,23 @@ function CadastroCandidato() {
                   <h2 className="title">Stag.io</h2>
                 </ul>
             </div>
-            <div className="container-button-2">
-                <button class="btn btn-primary vags_btn" type="button">Vagas</button>
-            </div>
         </nav>
 
       <div className="container margin_container">
           <div className="row">
               <div className="col sub_title_user">
-                <h4>Cadastro de Usuário</h4>
+                <h4>Cadastro de Empresa</h4>
               </div>
           </div>
       </div>
-      <div className="container">
+      <div className="container-empresa">
           <div className="content-row">
               <div className="col-md-4">
+                 <img src={Empresa} className="imagem_empresa"/>
+              </div>
+              <div className="col-md-4">
                   <input className="text-box-type-1-user" id="text1" placeholder="Nome"></input>
-                  <input className="text-box-type-1-user" id="text1" placeholder="CPF"></input>
+                  <input className="text-box-type-1-user" id="text1" placeholder="CNPJ"></input>
                   <input className="text-box-type-1-user" id="text1" placeholder="Senha"></input>
                   <input className="text-box-type-2-user" id="text1" placeholder="Descrição"></input>
                   <div className="container-button">
@@ -41,13 +43,7 @@ function CadastroCandidato() {
               </div>
               <div className="col-md-4">
                   <input className="text-box-type-1-user" id="text1" placeholder="Localização"></input>
-                  <input className="text-box-type-1-user" id="text1" placeholder="Escolaridade"></input>
-                  <input className="text-box-type-1-user" id="text1" placeholder="Currículo"></input>
-                  <text className="text-areas">Áreas de interesse</text>
-                  <input className="text-box-type-1-user" id="text1" placeholder="#python"></input>
-              </div>
-              <div className="col-md-4">
-                 <img src={Usuario} className="imagem_usuario"/>
+                  <input className="text-box-type-1-user" id="text1" placeholder="Site próprio"></input>
               </div>
           </div>
       </div>
@@ -56,4 +52,4 @@ function CadastroCandidato() {
   );
 }
 
-export default CadastroCandidato;
+export default CadastroEmpresa;
