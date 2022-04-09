@@ -3,6 +3,10 @@
     width: 100%;
 }
 
+.margin_container{
+    margin-left: 2em;
+}
+
 .navbar_back{
     background-color: transparent;
     min-width: 768px;
@@ -10,13 +14,39 @@
     padding-left: 0.5rem;
 }
 
-.buttonLoggin {     
-    background-color: Transparent;
-    background-repeat:no-repeat;
+.text-box-type-1-user{
+    padding: 10px 15px;
+    height: 10%;
+    width: 95%;
+    border: 1px solid #E2E1E5;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.content-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2em;
+}
+
+.text-box-type-2-user{
+    padding: 10px 15px;
+    height: 35%;
+    width: 95%;
+    border: 1px solid #E2E1E5;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+.container-button{
+    padding-top: 4em;
+    align-items: flex-end;
+}
+
+.user_btn{
+    background-color: #5E239D;
     border: none;
     cursor:pointer;
-    overflow: hidden;     
-    font-size: 1cm;   
+    overflow: hidden; 
 }
 
 .title{
@@ -27,39 +57,14 @@
     
 }
 
-.margin{
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+.sub_title_user{
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    
 }
 
-.marginTop{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.blackTest{
-    background-color: black;
-}
-
-.whiteTest{
-    background-color: white;
-}
-
-.blueTest{
-    background-color: blue;
-}
-
-.imagem{
-    height: 500px;
-}
-
-.subTitle{
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.colorButton{
-    background-color: #96EED5;
+.imagem_usuario{
+    height: 28em;
+    padding-left: 5em;
 }

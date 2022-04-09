@@ -13,7 +13,8 @@ function Popup(props){
                          <img src={Lock} className="imagemLogin"/>
                          <div className="mb-3"><input className="form-control" type="email" name="email" placeholder="CNPJ/CPF" /></div>
                          <div className="mb-3"><input className="form-control" type="password" name="password" placeholder="Senha" /></div>
-                         <div className="mb-3"><button className="btn btn-secondary d-block w-100 buttonColor" type="submit">Log In</button></div><a className="forgot linkOptions" href="#">Forgot your email or password?</a>
+                         <div className="mb-3"><button className="btn btn-secondary d-block w-100 buttonColor" type="submit">Log In</button>
+                         </div><a className="forgot linkOptions" href="#">Forgot your email or password?</a>
                      </form>
                  </section>
             </div>
