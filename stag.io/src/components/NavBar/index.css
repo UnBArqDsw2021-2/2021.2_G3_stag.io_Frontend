@@ -1,0 +1,22 @@
+.NavBar{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%; 
+    /* background-color: blue; */
+}
+
+.Logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.LogoName{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+}
