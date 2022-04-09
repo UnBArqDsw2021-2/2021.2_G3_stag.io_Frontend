@@ -1,0 +1,85 @@
+.subTitle{
+    text-align: left;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0em;
+}
+.text{
+    color: black;
+    font-style: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.content-column{
+    display: inline;
+    height: 25em;
+    /* background-color: red; */
+    width: 18em;
+}
+
+.content-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2em;
+}
+
+.vaga-empresa{
+    height: 100%;
+    width: 100%;
+}
+
+.text-box-type-1{
+    padding: 0.6em 0.9em;
+    height: 3em;
+    width: 16em;
+    border: 0.06em solid #E2E1E5;
+    border-radius: 0.3em;
+    margin-bottom: 1.4em;
+}
+
+.text-box-type-2{
+    padding: 0.6em 0.9em;
+    height: 8.4em;
+    width: 25em;
+    border: 0.06em solid #E2E1E5;
+    border-radius: 0.3em;
+    margin-bottom: 1.4em;
+}
+
+.select-list-1{
+    padding: 0.6em 0.9em;
+    height: 8%;
+    width: 65%;
+    border: 0.06em solid #E2E1E5;
+    border-radius: 0.3em;
+    margin-bottom: 2.9em;
+}
+
+.select-list-2{
+    padding: 0.6em 0.9em;
+    height: 8%;
+    width: 65%;
+    border: 0.06em solid #E2E1E5;
+    border-radius: 0.3em;
+    margin-bottom: 20em;
+}
+
+.buttonColor{
+    background-color: #7a1ede;
+    height: 3em;
+    width: 7em;
+    text-align: center;
+    border: 0.06em solid #a1a0a5;
+    border-radius: 0.3em;
+    color: white;
+}
+
+.button-row{
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+    text-align: right;
+    padding-right: 1.8em;
+    padding-bottom: 1.0em;
+}
