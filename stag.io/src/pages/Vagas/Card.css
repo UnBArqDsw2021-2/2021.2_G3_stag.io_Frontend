@@ -11,12 +11,21 @@
 }
 
 .left-container {
+    width: 500px;
     float: left;
 }
 
 .right-container {
+    overflow-wrap: break-word;
+    margin-top: 20px;
+    width: 300px;
+    height: 100px;
     float: right;
-    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 825px;
+    max-height: 114px;
 }
 
 .card-container .title {
@@ -40,13 +49,15 @@
 }
 
 .tag {
+    height: 30px;
+    width: 66px;
     font-family: Poppins;
     font-size: 15px;
     font-weight: 400;
     line-height: 30px;
     text-align: center;
-    margin: 3px;
     padding: 5px;
+    margin: 5px;
     border: 1px solid black;
     border-radius: 18px;
     background: rgba(249, 234, 234, 1);
