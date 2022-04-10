@@ -50,10 +50,10 @@ function Inicio() {
                         </h3>
                         <div className="row">
                           <div className="col-xs-6 col-sm-6 col-md-6">
-                            <a href="" className="btn btn-lg btn-outline-dark btn-block colorButton">Estagiar</a>
+                            <a href="cadastroCandidato" className="btn btn-lg btn-outline-dark btn-block colorButton">Estagiar</a>
                           </div>
                           <div className="col-xs-6 col-sm-6 col-md-6">
-                            <a href="" className="btn btn-lg btn-outline-dark btn-block colorButton">Estagiários</a>
+                            <a href="cadastroEmpresa" className="btn btn-lg btn-outline-dark btn-block colorButton">Estagiários</a>
                           </div>
                         </div>
                       </div>
