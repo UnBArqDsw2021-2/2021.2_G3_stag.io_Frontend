@@ -16,20 +16,14 @@
 }
 
 .right-container {
-    overflow-wrap: break-word;
+    text-align: right;
     margin-top: 20px;
     width: 300px;
     height: 100px;
     float: right;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 825px;
-    max-height: 114px;
 }
 
 .card-container .title {
-    border-radius: nullpx;
     font-family: Poppins;
     font-size: 35px;
     font-weight: 700;
@@ -41,7 +35,6 @@
     font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
-    line-height: 21px;
     letter-spacing: 0.05em;
     text-align: justified;
     padding-top: 2px;
@@ -49,12 +42,9 @@
 }
 
 .tag {
-    height: 30px;
-    width: 66px;
     font-family: Poppins;
     font-size: 15px;
     font-weight: 400;
-    line-height: 30px;
     text-align: center;
     padding: 5px;
     margin: 5px;
