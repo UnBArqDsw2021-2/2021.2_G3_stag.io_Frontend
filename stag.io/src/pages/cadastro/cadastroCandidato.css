@@ -37,6 +37,17 @@
     border-radius: 5px;
     margin-bottom: 1em;
 }
+
+.text-password-user{
+    padding: 10px 15px;
+    height: 10%;
+    width: 95%;
+    border: 1px solid #E2E1E5;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    -webkit-text-security: disc;
+    text-security: disc;
+}
 .container-button{
     padding-top: 4em;
     align-items: flex-end;
