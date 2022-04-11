@@ -1,25 +1,22 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import logo from "../../images/logo-white.svg";
+import { Button, Navbar } from 'react-bootstrap';
 import "./index.css";
 
-const NavBar = () => {
+const NavBarLogo = () => {
 
 
     return(
-        <nav className="NavBar">
+        <Navbar className="NavBar">
             <div className="Logo">
                 <Link to="/">
                     <img src={logo} />
                 </Link>
                 <ul className="LogoName">Stag.io</ul>
             </div>
-
-            {/* <button onClick={()=>{console.log("saiu")}}>
-                sair
-            </button> */}
-        </nav >
+        </Navbar >
     );
 }
 
-export default NavBar;
+export default NavBarLogo;

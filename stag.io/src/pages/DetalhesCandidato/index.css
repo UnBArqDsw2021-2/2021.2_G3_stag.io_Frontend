@@ -1,0 +1,58 @@
+.container{
+    position:relative;
+    /* margin-top: 100px; */
+    width: 100%;
+}
+
+.title-candidate{
+    margin-left: 5%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 52px;
+    color: #FFFFFF;
+}
+
+.company{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:auto;
+    padding: 3em;
+    max-width: 67em;
+}
+
+
+.company-desc{
+    width: 30em;
+    height: 20em;
+    margin: 1em;
+    /* background-color: red; */
+}
+
+.description{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    text-indent: 20px;
+    color: #000000;
+    margin: 5px;
+}
+
+.text-font{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    text-indent: 20px;
+    color: #FFFFFF;
+}

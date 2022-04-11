@@ -1,0 +1,25 @@
+.vaga{
+    display: flex;
+    align-items: center;
+    max-width: 30em;
+    height: 3.75em;
+    margin: 0.6em;
+    border: 0.1em solid #000000;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6.25em;
+    justify-content: space-between;
+}
+.body{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1.8em;
+    color:black;
+}
+
+.action{
+    display: flex;
+    width: 5em;
+    justify-content: space-between;
+}
