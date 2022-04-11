@@ -1,0 +1,389 @@
+.subTitle {
+    text-align: left;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0em;
+
+    position: absolute;
+    width: 30%;
+    height: 7.3%;
+    left: 4.3%;
+    top: 19.3%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 7.2%;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+
+.localizacao {
+    position: absolute;
+    width: 19.6%;
+    height: 2.8%;
+    left: 4.4%;
+    top: 29.3%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    text-indent: 20px;
+
+    color: #FFFFFF;
+}
+
+.localizacao-description {
+    position: absolute;
+    width: 19.6%;
+    height: 2.8%;
+    left: 4.4%;
+    top: 32.8%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    text-indent: 20px;
+
+    color: #000000;
+}
+
+.carga-horaria {
+    position: absolute;
+    width: 19.6%;
+    height: 2.8%;
+    left: 4.4%;
+    top: 38%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    text-indent: 20px;
+
+    color: #FFFFFF;
+}
+
+.carga-horaria-description {
+    position: absolute;
+    width: 19.6%;
+    height: 2.8%;
+    left: 4.4%;
+    top: 41.4%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    text-indent: 20px;
+
+    color: #000000;
+}
+
+.escolaridade {
+    position: absolute;
+    width: 19.6%;
+    height: 2.8%;
+    left: 4.4%;
+    top: 46.8%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    text-indent: 20px;
+
+    color: #FFFFFF;
+}
+
+.escolaridade-description {
+    position: absolute;
+    width: 18.3%;
+    height: 2.8%;
+    left: 4.4%;
+    top: 50.3%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    text-indent: 20px;
+
+    color: #000000;
+}
+
+.site {
+    position: absolute;
+    width: 19.6%;
+    height: 2.8%;
+    left: 4.4%;
+    top: 55.7%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    text-indent: 20px;
+
+    color: #FFFFFF;
+}
+
+.site-description {
+    position: absolute;
+    width: 20.3%;
+    height: 2.8%;
+    left: 4.4%;
+    top: 58.5%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    text-indent: 20px;
+
+    color: #000000;
+}
+
+.descricao {
+    position: absolute;
+    width: 19.6%;
+    height: 2.8%;
+    left: 6%;
+    top: 63.9%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    text-indent: 20px;
+
+    color: #FFFFFF;
+}
+
+.descricao-description {
+    position: absolute;
+    width: 36.8%;
+    height: 12%;
+    left: 6%;
+    top: 67.4%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    text-indent: 20px;
+
+    color: #000000;
+}
+
+.valor-bolsa {
+    position: absolute;
+    width: 24.2%;
+    height: 4.6%;
+    left: 50%;
+    top: 22.5%;
+
+    background: #F9EAEA;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 18px;
+}
+
+.valor-bolsa-description {
+    position: absolute;
+    width: 23.5%;
+    height: 4.2%;
+    left: 50%;
+    top: 22.5%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 45px;
+    /* identical to box height, or 200% */
+
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.6);
+
+    background: #F9EAEA;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 18px;
+}
+
+
+.requisitos {
+    position: absolute;
+    width: 19.6%;
+    height: 2.8%;
+    left: 50%;
+    top: 31.7%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    text-indent: 20px;
+
+    color: #FFFFFF;
+}
+
+.requisitos-description {
+    position: absolute;
+    width: 36.8%;
+    height: 12%;
+    left: 50%;
+    top: 33.1%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+.privilegios {
+    position: absolute;
+    width: 19.6%;
+    height: 2.8%;
+    left: 50%;
+    top: 54%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    text-indent: 20px;
+
+    color: #FFFFFF;
+}
+
+.privilegios-description {
+    position: absolute;
+    width: 36.8%;
+    height: 12%;
+    left: 50%;
+    top: 55.5%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+.botao-candidatar {
+    position: absolute;
+    width: 21.6%;
+    height: 9%;
+    left: 71.2%;
+    top: 82.8%;
+
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+.botao-candidatar-teste {
+    position: absolute;
+    width: 21.6%;
+    height: 9%;
+    left: 71.2%;
+    top: 82.8%;
+
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 100px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0.05em;
+    padding: 0.5em;
+    color: #000000;
+
+    text-decoration: none;
+}
+
+.botao-candidatar-teste:hover {
+    background: #e4e3e3;
+}
+
+
+.content-column1 {
+    display: inline-block;
+    height: 30em;
+    /* background-color: red; */
+    width: 50%;
+    float: left;
+}
+
+.content-column2 {
+    display: inline-block;
+    height: 30em;
+    /* background-color: red; */
+    width: 50%;
+    float: left;
+}
+
+.content-row1 {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+    flex-wrap: wrap;
+}
