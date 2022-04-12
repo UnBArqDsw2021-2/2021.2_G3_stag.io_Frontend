@@ -1,10 +1,11 @@
 import React from "react";
 import './DescricaoVaga.css';
+import Navbar from "../navBar/NavBar"
 
 function DescricaoVaga() {
     return (
         <div className="detalhes-candidato">
-
+            <Navbar></Navbar>
             {/* Container que aloca a página */}
             <h1 className="subTitle">
                 Engenheiro de Dados
