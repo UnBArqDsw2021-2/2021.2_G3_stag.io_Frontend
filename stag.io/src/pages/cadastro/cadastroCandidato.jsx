@@ -2,6 +2,7 @@ import './cadastroCandidato.css';
 import Usuario from './assets/cadastro_usuario.png'
 import React, {useState} from 'react';
 
+  
 function CadastroCandidato() {
 
   const [nome, setNome] = useState("");
