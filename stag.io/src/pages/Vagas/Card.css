@@ -10,6 +10,11 @@
     box-sizing: border-box;
 }
 
+.card-container:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
 .left-container {
     width: 500px;
     float: left;
