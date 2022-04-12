@@ -7,12 +7,6 @@ class Filtro extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: "coconut",
-            countries: [
-                { id: "1", country: "Cambodia" },
-                { id: "2", country: "Australia" },
-                { id: "3", country: "US" }
-            ],
             vagas: [],
             vaga: ""
         };
@@ -48,10 +42,8 @@ class Filtro extends Component {
     }
 
     render() {
-        const countries = require("../data/countries.json");
-        const uniqueCountry = this.getUnique(countries.world, "country");
 
-        const uniqueCouse = this.getUnique(this.state.vagas, "tag");
+        const uniqueVaga = this.getUnique(this.state.vagas, "tag");
 
         const vagas = this.state.vagas;
         const vaga = this.state.vaga;
@@ -73,7 +65,7 @@ class Filtro extends Component {
                                 value={this.state.vaga}
                                 onChange={this.handleChangeVaga}
                             >
-                                {uniqueCouse.map(vaga => (
+                                {uniqueVaga.map(vaga => (
                                     <option key={vaga.id} value={vaga.tag}>
                                         {vaga.tag}
                                     </option>
