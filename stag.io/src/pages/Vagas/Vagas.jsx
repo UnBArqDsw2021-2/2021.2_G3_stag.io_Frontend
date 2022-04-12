@@ -1,7 +1,8 @@
 import React from "react";
-import './MinhasVagas.css';
-import Navbar from "../../components/navBar/NavBar"
-import Card from "../../components/Card"
+import './Vagas.css';
+import Navbar from "../../components/navBar/NavBar";
+import Card from "../../components/Card";
+import Filtro from "../../components/filtro";
 
 function MinhasVagas() {
 
@@ -12,12 +13,10 @@ function MinhasVagas() {
             <Navbar></Navbar>
             {/* Container que aloca a página */}
             <h1 className="subTitle">
-                Minhas Vagas
+                Vagas
             </h1>
 
-            <div className="content-column1">
-                <Card tag={myArray} title="Cientista de Dados" company="Empresa DadosNature"></Card>
-            </div>
+            <Filtro></Filtro>
 
         </div>
     );

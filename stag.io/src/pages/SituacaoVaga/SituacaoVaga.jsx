@@ -1,6 +1,6 @@
 import React from "react";
 import './SituacaoVaga.css';
-import Navbar from "../navBar/NavBar"
+import Navbar from "../../components/navBar/NavBar"
 
 function SituacaoVaga() {
     return (
@@ -11,7 +11,7 @@ function SituacaoVaga() {
                 Engenheiro de Dados
             </h1>
             <div className="content-row1">
-                <div className="content-column1">
+                <div className="content-column2">
 
                     {/* Começo Descrição */}
                     <h2 className="localizacao">

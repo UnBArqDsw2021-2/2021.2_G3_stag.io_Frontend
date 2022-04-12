@@ -368,7 +368,6 @@
 .content-column1 {
     display: inline-block;
     height: 30em;
-    /* background-color: red; */
     width: 50%;
     float: left;
 }
@@ -376,7 +375,6 @@
 .content-column2 {
     display: inline-block;
     height: 30em;
-    /* background-color: red; */
     width: 50%;
     float: left;
 }
