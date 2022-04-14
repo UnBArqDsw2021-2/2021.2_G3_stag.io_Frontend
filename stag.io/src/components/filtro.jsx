@@ -20,22 +20,6 @@ class Filtro extends Component {
         this.setState({ vaga: event.target.value });
     };
 
-    getUnique(arr, comp) {
-        const unique = arr
-            //store the comparison values in array
-            .map(e => e[comp])
-
-            // store the keys of the unique objects
-            .map((e, i, final) => final.indexOf(e) === i && i)
-
-            // eliminate the dead keys & store unique objects
-            .filter(e => arr[e])
-
-            .map(e => arr[e]);
-
-        return unique;
-    }
-
     componentDidMount() {
         const vagas = require("../data/vagas.json");
         this.setState({ vagas: vagas });
@@ -43,13 +27,12 @@ class Filtro extends Component {
 
     render() {
 
-        const uniqueVaga = this.getUnique(this.state.vagas, "tag");
 
         const vagas = this.state.vagas;
         const vaga = this.state.vaga;
 
         const filterDropdown = vagas.filter(function (result) {
-            return result.tag === vaga;
+            return result.escolaridade === vaga || result.regime === vaga;
         });
 
         return (
@@ -65,13 +48,28 @@ class Filtro extends Component {
                                 value={this.state.vaga}
                                 onChange={this.handleChangeVaga}
                             >
-                                {uniqueVaga.map(vaga => (
-                                    <option key={vaga.id} value={vaga.tag}>
-                                        {vaga.tag}
-                                    </option>
-                                ))}
+                                <option key={vaga.id} value="Ensino Médio">
+                                    Ensino Médio
+                                </option>
+
+                                <option key={vaga.id} value="Ensino Superior">
+                                    Ensino Superior
+                                </option>
                             </select>
                         </label>
+
+                        <br />
+                        <br />
+
+                        <label value={this.state.vaga} onChange={this.handleChangeVaga} >
+                            <input type="radio" name="regime" value="Presencial" />
+                            Presencial
+                            <br />
+                            <input type="radio" name="regime" value="Remoto" />
+                            Remoto
+                            <br />
+                        </label>
+
                     </div>
 
                     <div className="content-column1">
