@@ -45,7 +45,7 @@ function Inicio() {
                 <div className="row">
                     <div className="col-lg-8 marginTop">
                       <div className="container">
-                        <h3 className="subTitle">
+                        <h3 className="subTitle_inicio">
                             Qual a sua Busca?
                         </h3>
                         <div className="row">

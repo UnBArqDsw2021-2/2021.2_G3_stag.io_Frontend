@@ -13,7 +13,7 @@ const DetalhesCandidato = () => {
             <div className="content-row1">
                     <div className="content-column1">
                         {/* Começo Descrição */}
-                        <h2 className="text1">
+                        <h2 className="text_detalhes_candidato">
                             Descrição
                         </h2>
                         <h2 className="text-description1">
@@ -21,21 +21,21 @@ const DetalhesCandidato = () => {
                         </h2>
 
                         {/* Começo Escolaridade */}
-                        <h2 className="text1">
+                        <h2 className="text_detalhes_candidato">
                             Escolaridade
                         </h2>
                         <h2 className="text-description1">
                             Ensino médio
                         </h2>
                         {/* Começo Localização */}
-                        <h2 className="text1">
+                        <h2 className="text_detalhes_candidato">
                             Localização
                         </h2>
                         <h2 className="text-description1">
                             Brasília - DF
                         </h2>
                         {/* Começo Área de interesse */}
-                        <h2 className="text1">
+                        <h2 className="text_detalhes_candidato">
                             Área de interesse
                         </h2>
                         <div className="content-row1">
@@ -44,7 +44,7 @@ const DetalhesCandidato = () => {
                         <div className="text-box-type1-2" id="" >#bi</div>
                         </div>
                         {/* Começo Currículo */}
-                        <h2 className="text1">
+                        <h2 className="text_detalhes_candidato">
                             Currículo
                         </h2>
                         <div className="text-box-type1-2" id="">Arquivo</div>

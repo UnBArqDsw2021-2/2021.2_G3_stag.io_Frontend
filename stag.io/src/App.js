@@ -37,15 +37,25 @@ function App() {
         <Routes>  
         
         <Route path="/" element={<Inicio/>}></Route>
-        <Route path="/cadastroCandidato" element={
-          //<Private>
-            <CadastroCandidato/> //Exemplo de uso da função Private
-          //</Private> 
-        }></Route>
-        <Route path="/detalhes-candidato" element={<DetalhesCandidato/>}></Route>
-        <Route path="/detalhes-empresa" element={<DetalhesEmpresa/>}></Route>
-        <Route path="/vaga-empresa" element={<VagaEmpresa/>}></Route>
+        <Route path="/cadastroCandidato" element={<CadastroCandidato/>}></Route>
         <Route path="/cadastroEmpresa" element={<CadastroEmpresa/>}></Route>
+
+
+        <Route path="/detalhes-candidato" element={
+          //<Private>
+            <DetalhesCandidato/>
+          //</Private>
+            }></Route>
+        <Route path="/detalhes-empresa" element={
+          //<Private>
+            <DetalhesEmpresa/>
+          //</Private>
+        }></Route>
+        <Route path="/vaga-empresa" element={
+          //<Private>
+            <VagaEmpresa/>
+          //</Private>
+        }></Route>
         
         </Routes>
       </AuthProvider>
