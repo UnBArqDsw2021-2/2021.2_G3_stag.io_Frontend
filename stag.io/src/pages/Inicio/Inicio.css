@@ -1,3 +1,74 @@
 .Inicio {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar_back{
+    background-color: transparent;
+    min-width: 768px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.buttonLoggin {     
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
     
+       
+}
+
+.title{
+    color: white;
+    font-style: 'Poppins', sans-serif;
+    padding-top: 10px;
+    font-size: 2em;
+    
+}
+
+.titleButton{
+    color: white;
+    font-style: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    padding-top: 10px;
+    
+}
+
+.margin{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.marginTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blackTest{
+    background-color: black;
+}
+
+.whiteTest{
+    background-color: white;
+}
+
+.blueTest{
+    background-color: blue;
+}
+
+.imagem{
+    height: 500px;
+}
+
+.subTitle{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.colorButton{
+    background-color: #96EED5;
 }
