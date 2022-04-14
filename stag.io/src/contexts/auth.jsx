@@ -18,17 +18,17 @@ export const AuthProvider = ({children}) => {
       setLoading(false);
     }, []);
   
-    const login = (cpf, password) => {
-      console.log("login auth", {cpf, password});
+    const login = (value) => {
+      console.log("login auth", value);
 
       const loggedUser = {
         id: "123",
-        cpf,
+        cpf: value.cpf,
       };
 
       localStorage.setItem("user", JSON.stringify(loggedUser));
 
-      if(password === "secret"){ //Senha para verificar a validação de login
+      if(value.password === "secret"){ //Senha para verificar a validação de login
         console.log("Vc descobriu a senha secreta!");
         setUser(loggedUser);
         navigate("/cadastroCandidato"); //Mudar a página de destino quando for unir o Front-end

@@ -1,23 +1,52 @@
 import './cadastroCandidato.css';
 import Usuario from './assets/cadastro_usuario.png'
 import React, {useState} from 'react';
-
+import * as Yup from "yup";
+import toast from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
   
 function CadastroCandidato() {
 
-  const [nome, setNome] = useState("");
-  const [cpf, setCpf] = useState("");
-  const [description, setDescription] = useState("");
-  const [password, setPassword] = useState("");
+  const [ values, setValues ] = useState({
+    nome: '',
+    cpf: '',
+    description: '',
+    password: '',
+    local: '',
+    escolaridade: '',
+    curriculo: '',
+    areaInteresse: '',
+  })
 
-  const [local, setLocal] = useState("");
-  const [escolaridade, setEscolaridade] = useState("");
-  const [curriculo, setCurriculo] = useState("");
-  const [areaInteresse, setAreaInteresse] = useState("");
+  async function handleSubmit(){
 
-  const handleSubmit = (e) => {
+    const schema = Yup.object({
+        nome: Yup.string().required("Nome é obrigatório!"),
+        cpf: Yup.string().required("CPF é obrigatório!"),
+        description: Yup.string().required("Descrição é obrigatório!"),
+        password: Yup.string().required("senha é obrigatório!"),
+        local: Yup.string().required("Local é obrigatória!"),
+        escolaridade: Yup.string().required("Escolaridade é obrigatória!"),
+        curriculo: Yup.string().required("Currículo é obrigatório!"),
+        areaInteresse: Yup.string().required("Áreas de interesse é obrigatório!"),
+    });
+
+
+    try{
+        await schema.validate(values);
+        toast.success("Usuário cadastrado");
+        window.location.pathname = '/'
+    }  
+    catch(error){
+        if( error instanceof Yup.ValidationError){
+            toast.error(error.message);
+        }
+    }
+  }
+
+  const handleChange = (e) => {
     e.preventDefault();
-    console.log("submit", {nome, cpf, description, password, local, escolaridade, curriculo, areaInteresse});
+    setValues({...values, [e.target.name]: e.target.value});
   }
 
   return (
@@ -49,43 +78,27 @@ function CadastroCandidato() {
       <div className="container">
           <div className="content-row">
               <div className="col-md-4">
-                  <input className="text-box-type-1-user" id="text1" placeholder="Nome" value={nome} 
-                  onChange={ (e)=> setNome(e.target.value)
-                  }></input>
-                  <input className="text-box-type-1-user" id="text2" placeholder="CPF" value={cpf} 
-                  onChange={ (e)=> setCpf(e.target.value)
-                  }></input>
-                  <input className="text-password-user" id="text3" placeholder="Senha" value={password}
-                  onChange={ (e)=> setPassword(e.target.value)
-                  }></input>
-                  <input className="text-box-type-2-user" id="text4" placeholder="Descrição" value={description}
-                  onChange={ (e)=> setDescription(e.target.value)
-                  }></input>
+                  <input className="text-box-type-1-user" id="text1" placeholder="Nome" name="nome" value={values.nome} onChange={handleChange}></input>
+                  <input className="text-box-type-1-user" id="text2" placeholder="CPF" name="cpf" value={values.cpf} onChange={handleChange}></input>
+                  <input className="text-password-user" id="text3" placeholder="Senha" name="password" value={values.password} onChange={ handleChange}></input>
+                  <input className="text-box-type-2-user" id="text4" placeholder="Descrição" name="description" value={values.description} onChange={handleChange}></input>
                   <div className="container-button">
                       <button className="btn btn-primary user_btn" type="button" onClick={handleSubmit}>Cadastrar</button>
                   </div>
               </div>
               <div className="col-md-4">
-                  <input className="text-box-type-1-user" id="text5" placeholder="Localização" value={local}
-                  onChange={ (e)=> setLocal(e.target.value)
-                  }></input>
-                  <input className="text-box-type-1-user" id="text6" placeholder="Escolaridade" value={escolaridade}
-                  onChange={ (e)=> setEscolaridade(e.target.value)
-                  }></input>
-                  <input className="text-box-type-1-user" id="text7" placeholder="Currículo" value={curriculo}
-                  onChange={ (e)=> setCurriculo(e.target.value)
-                  }></input>
+                  <input className="text-box-type-1-user" id="text5" placeholder="Localização" name="local" value={values.local} onChange={ handleChange}></input>
+                  <input className="text-box-type-1-user" id="text6" placeholder="Escolaridade" name="escolaridade" value={values.escolaridade} onChange={handleChange}></input>
+                  <input className="text-box-type-1-user" id="text7" placeholder="Currículo" name="curriculo" value={values.curriculo} onChange={handleChange}></input>
                   Áreas de interesse
-                  <input className="text-box-type-1-user" id="text8" placeholder="#python" value={areaInteresse}
-                  onChange={ (e)=> setAreaInteresse(e.target.value)
-                  }></input>
+                  <input className="text-box-type-1-user" id="text8" placeholder="#python" name="areaInteresse" value={values.areaInteresse} onChange={handleChange}></input>
               </div>
               <div className="col-md-4">
                  <img src={Usuario} className="imagem_usuario"/>
               </div>
           </div>
       </div>
-
+      <Toaster />
     </div>
   );
 }
