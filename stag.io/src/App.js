@@ -2,6 +2,10 @@ import "./App.css";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Children, useContext } from "react";
 
+import DescricaoVaga from "./pages/DescricaoVaga/DescricaoVaga";
+import SituacaoVaga from "./pages/SituacaoVaga/SituacaoVaga";
+import MinhasVagas from "./pages/MinhasVagas/MinhasVagas";
+import Vagas from "./pages/Vagas/Vagas";
 import Inicio from "./pages/Inicio/Inicio";
 import CadastroCandidato from "./pages/Cadastro/cadastroCandidato";
 import CadastroEmpresa from "./pages/Cadastro/cadastroEmpresa";
@@ -56,7 +60,11 @@ function App() {
             <VagaEmpresa/>
           //</Private>
         }></Route>
-        
+    
+        <Route path="/DescricaoVaga" element={<DescricaoVaga />}></Route>
+        <Route path="/SituacaoVaga" element={<SituacaoVaga />}></Route>
+        <Route path="/MinhasVagas" element={<MinhasVagas />}></Route>
+        <Route path="/Vagas" element={<Vagas />}></Route>
         </Routes>
       </AuthProvider>
     </div>

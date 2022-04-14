@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "empresa": "Empresa DadosNature",
+        "vaga": "Engenheiro de Dados",
+        "tag": "Ensino Superior",
+        "regime": "Remoto",
+        "tags": [
+            "#python",
+            "#data",
+            "#bi"
+        ]
+    },
+    {
+        "id": 2,
+        "empresa": "Empresa DadosNature",
+        "vaga": "Cientista de Dados",
+        "tag": "Ensino Médio",
+        "regime": "Remoto",
+        "tags": [
+            "#python",
+            "#data",
+            "#bi"
+        ]
+    },
+    {
+        "id": 3,
+        "empresa": "Empresa DadosNature",
+        "vaga": "Desenvolvedor Python",
+        "tag": "Ensino Superior",
+        "regime": "Remoto",
+        "tags": [
+            "#python",
+            "#flask",
+            "#django"
+        ]
+    },
+    {
+        "id": 4,
+        "empresa": "Empresa DadosNature",
+        "vaga": "Desenvolvedor mobile",
+        "tag": "Ensino Médio",
+        "regime": "Presencial",
+        "tags": [
+            "#kotlin",
+            "#react",
+            "#js"
+        ]
+    }
+]
