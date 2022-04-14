@@ -6,6 +6,10 @@ import Inicio from "./pages/Inicio/Inicio";
 import CadastroCandidato from "./pages/Cadastro/cadastroCandidato";
 import CadastroEmpresa from "./pages/Cadastro/cadastroEmpresa";
 import {AuthProvider, AuthContext} from "./contexts/auth";
+import NavBarLogo from "./components/NavBarLogo";
+import DetalhesCandidato from "../src/pages/DetalhesCandidato";
+import DetalhesEmpresa from "../src/pages/DetalhesEmpresa";
+import VagaEmpresa from "../src/pages/VagaEmpresa";
 
 
 
@@ -38,6 +42,9 @@ function App() {
             <CadastroCandidato/> //Exemplo de uso da função Private
           //</Private> 
         }></Route>
+        <Route path="/detalhes-candidato" element={<DetalhesCandidato/>}></Route>
+        <Route path="/detalhes-empresa" element={<DetalhesEmpresa/>}></Route>
+        <Route path="/vaga-empresa" element={<VagaEmpresa/>}></Route>
         <Route path="/cadastroEmpresa" element={<CadastroEmpresa/>}></Route>
         
         </Routes>
