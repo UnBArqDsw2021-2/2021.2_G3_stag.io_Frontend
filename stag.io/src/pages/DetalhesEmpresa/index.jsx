@@ -5,6 +5,16 @@ import Vaga from "../../components/Vaga";
 
 
 const DetalhesCandidato = (props) => {
+    const { values }= props;
+
+
+    const getEmpresa = (id) => {
+
+    }
+
+    useEffect(()=>{ 
+        // getEmpresa(values.id);
+    },[])
 
     return(
         <div className="container">
@@ -14,7 +24,7 @@ const DetalhesCandidato = (props) => {
                 <div className="company-desc">
                     <div className="description">
                         <div className="text-font"> Descrição </div>
-                        <div> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis ex at leo feugiat pretium. Nullam eu dapibus elit, volutpat aliquam urna. Vestibulum semper erat vel dui dictum vehicula </div>
+                        <div> {values. desc} </div>
                     </div>
                     <div className="description">
                         <div className="text-font"> Localização </div>

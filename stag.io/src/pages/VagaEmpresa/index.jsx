@@ -8,7 +8,7 @@ import './index.css';
 const VagaEmpresa = (props) => {
     const { vaga } = props;
     const [ values, setValues ] = useState({
-        title:'',
+        title: '',
         descripiton: '',
         privilege:'',
         workload: '',
@@ -48,6 +48,18 @@ const VagaEmpresa = (props) => {
         }
     }
 
+    const getVacacy = (id) =>{
+        try{
+
+        }
+        catch(error){
+            
+        }
+    }
+
+    useEffect(()=>{
+        getVacacy(id);
+    },[])
 
     return(
         <div className="vaga-empresa">
