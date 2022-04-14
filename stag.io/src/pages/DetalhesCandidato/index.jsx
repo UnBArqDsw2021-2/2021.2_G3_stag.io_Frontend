@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../../components/NavBar";
 import './index.css';
 
 const DetalhesCandidato = () => {
@@ -55,3 +54,5 @@ const DetalhesCandidato = () => {
         </div>
     );
 }
+
+export default DetalhesCandidato;

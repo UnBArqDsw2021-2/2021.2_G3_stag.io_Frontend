@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // import NavBar from "../../components/NavBar";
 import * as Yup from "yup";
 import toast from 'react-hot-toast';
@@ -48,7 +48,7 @@ const VagaEmpresa = (props) => {
         }
     }
 
-    const getVacacy = (id) =>{
+    const getVacacy = () =>{
         try{
 
         }
@@ -58,7 +58,7 @@ const VagaEmpresa = (props) => {
     }
 
     useEffect(()=>{
-        getVacacy(id);
+        getVacacy();
     },[])
 
     return(

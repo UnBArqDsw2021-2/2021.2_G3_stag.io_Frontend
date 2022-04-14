@@ -8,14 +8,9 @@ const DetalhesCandidato = (props) => {
     const { values }= props;
 
 
-    const getEmpresa = (id) => {
+    const getEmpresa = () => {
 
     }
-
-    useEffect(()=>{ 
-        // getEmpresa(values.id);
-    },[])
-
     return(
         <div className="container">
             <h1 className="title-candidate"> Nome da Empresa </h1>
