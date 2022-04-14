@@ -8,14 +8,14 @@ function MinhasVagas() {
     var myArray = ['#python', '#data', '#bi']
 
     return (
-        <div className="detalhes-candidato">
+        <div className="MinhasVagas">
             <Navbar></Navbar>
             {/* Container que aloca a página */}
-            <h1 className="subTitle">
+            <h1 className="subTitle_minhas_vagas">
                 Minhas Vagas
             </h1>
 
-            <div className="content-column1">
+            <div className="content-column1_minhas_vagas">
                 <Card tag={myArray} title="Cientista de Dados" company="Empresa DadosNature"></Card>
             </div>
 

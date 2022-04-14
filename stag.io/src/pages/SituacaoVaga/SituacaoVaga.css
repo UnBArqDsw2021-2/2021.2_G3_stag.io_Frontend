@@ -1,4 +1,9 @@
-.subTitle {
+.detalhes-candidato{
+    width: 100%;
+    height: 100%;
+}
+
+.subTitle_situcao_vagas {
     text-align: left;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
@@ -20,7 +25,7 @@
     color: #FFFFFF;
 }
 
-.localizacao {
+.localizacao_situacao_vagas {
     position: absolute;
     width: 19.6%;
     height: 2.8%;
@@ -30,16 +35,14 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.05em;
-    text-indent: 20px;
 
     color: #FFFFFF;
 }
 
-.localizacao-description {
+.localizacao-description_situacao_vagas {
     position: absolute;
     width: 19.6%;
     height: 2.8%;
@@ -49,16 +52,14 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.05em;
-    text-indent: 20px;
 
     color: #000000;
 }
 
-.carga-horaria {
+.carga-horaria_situacao_vagas {
     position: absolute;
     width: 19.6%;
     height: 2.8%;
@@ -68,16 +69,14 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.05em;
-    text-indent: 20px;
 
     color: #FFFFFF;
 }
 
-.carga-horaria-description {
+.carga-horaria-description_situacao_vagas {
     position: absolute;
     width: 19.6%;
     height: 2.8%;
@@ -87,16 +86,14 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.05em;
-    text-indent: 20px;
 
     color: #000000;
 }
 
-.escolaridade {
+.escolaridade_situacao_vagas {
     position: absolute;
     width: 19.6%;
     height: 2.8%;
@@ -106,18 +103,16 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.05em;
-    text-indent: 20px;
 
     color: #FFFFFF;
 }
 
-.escolaridade-description {
+.escolaridade-description_situacao_vagas {
     position: absolute;
-    width: 18.3%;
+    width: 40%;
     height: 2.8%;
     left: 4.4%;
     top: 50.3%;
@@ -125,16 +120,14 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.05em;
-    text-indent: 20px;
 
     color: #000000;
 }
 
-.site {
+.site_situacao_vagas {
     position: absolute;
     width: 19.6%;
     height: 2.8%;
@@ -144,16 +137,14 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.05em;
-    text-indent: 20px;
 
     color: #FFFFFF;
 }
 
-.site-description {
+.site-description_situacao_vagas {
     position: absolute;
     width: 20.3%;
     height: 2.8%;
@@ -163,16 +154,14 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.05em;
-    text-indent: 20px;
 
     color: #000000;
 }
 
-.descricao {
+.descricao_situacao_vagas {
     position: absolute;
     width: 19.6%;
     height: 2.8%;
@@ -182,18 +171,16 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.05em;
-    text-indent: 20px;
 
     color: #FFFFFF;
 }
 
-.descricao-description {
+.descricao-description_situacao_vagas {
     position: absolute;
-    width: 36.8%;
+    width: 40%;
     height: 12%;
     left: 6%;
     top: 67.4%;
@@ -201,16 +188,14 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.05em;
-    text-indent: 20px;
 
     color: #000000;
 }
 
-.valor-bolsa {
+.valor-bolsa_situacao_vagas {
     position: absolute;
     width: 24.2%;
     height: 4.6%;
@@ -223,12 +208,12 @@
     border-radius: 18px;
 }
 
-.valor-bolsa-description {
+.valor-bolsa-description_situacao_vagas {
     position: absolute;
-    width: 23.5%;
-    height: 4.2%;
+    max-height: 5%;
     left: 50%;
-    top: 22.5%;
+    padding-left: 1%;
+    padding-right: 1%;
 
     font-family: 'Poppins';
     font-style: normal;
@@ -238,6 +223,8 @@
     /* identical to box height, or 200% */
 
     text-align: center;
+    justify-content: center;
+    align-items: center;
 
     color: rgba(0, 0, 0, 0.6);
 
@@ -248,28 +235,25 @@
 }
 
 
-.requisitos {
+.requisitos_situacao_vagas {
     position: absolute;
-    width: 19.6%;
-    height: 2.8%;
-    left: 50%;
-    top: 31.7%;
+    width: 20%;
+    height: 3%;
+    padding-top:3.3%;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.05em;
-    text-indent: 20px;
 
     color: #FFFFFF;
 }
 
-.requisitos-description {
+.requisitos-description_situacao_vagas {
     position: absolute;
-    width: 36.8%;
+    width: 50%;
     height: 12%;
     left: 50%;
     top: 33.1%;
@@ -277,84 +261,80 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.05em;
 
     color: #000000;
 }
 
-.privilegios {
+.privilegios_situacao_vagas {
     position: absolute;
     width: 19.6%;
     height: 2.8%;
     left: 50%;
     top: 54%;
+    padding-top:2.3%;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.05em;
-    text-indent: 20px;
 
     color: #FFFFFF;
 }
 
-.privilegios-description {
+.privilegios-description_situacao_vagas {
     position: absolute;
-    width: 36.8%;
+    width: 50%;
     height: 12%;
     left: 50%;
     top: 55.5%;
+    padding-top:3.3%;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.05em;
 
     color: #000000;
 }
 
-.status {
+.status_situacao_vagas {
     position: absolute;
     width: 21.6%;
     height: 4%;
     left: 73.5%;
-    top: 85%;
+    top: 87%;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 52px;
+    font-size: 2.3em;
     line-height: 10px;
 
     color: #5E239D;
 }
 
-.content-column1 {
+.content-column1_situacao_vagas {
     display: inline-block;
     height: 30em;
     /* background-color: red; */
     width: 50%;
-    float: left;
 }
 
-.content-column2 {
+.content-column2_situacao_vagas {
     display: inline-block;
     height: 30em;
     /* background-color: red; */
     width: 50%;
-    float: left;
 }
 
-.content-row1 {
+.content-row1_situacao_vagas {
     display: flex;
     justify-content: space-between;
     padding: .5em;

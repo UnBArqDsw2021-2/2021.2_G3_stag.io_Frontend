@@ -12,7 +12,7 @@ function MinhasVagas() {
         <div className="detalhes-candidato">
             <Navbar></Navbar>
             {/* Container que aloca a página */}
-            <h1 className="subTitle">
+            <h1 className="subTitle_vagas">
                 Vagas
             </h1>
 

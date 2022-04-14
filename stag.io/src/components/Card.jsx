@@ -31,7 +31,7 @@ class Card extends Component {
         return (
             <div className="card-container">
                 <div className="left-container">
-                    <div className="title">{this.props.title}</div>
+                    <div className="title_card">{this.props.title}</div>
                     <div className="company">{this.props.company}</div>
                 </div>
                 {this.renderTag()}
