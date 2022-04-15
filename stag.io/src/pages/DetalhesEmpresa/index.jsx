@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "./detalhesEmpresa.css";
 import Vaga from "../../components/Vaga";
 
+import Navbar from "../../components/navBar/NavBar"
+
 const DetalhesEmpresa = () =>
   //props
   {
@@ -10,21 +12,7 @@ const DetalhesEmpresa = () =>
     const getEmpresa = () => {};
     return (
       <div className="detalhes-empresa">
-        <nav className="navbar navbar-expand-lg navbar-light">
-          <a className="navbar-brand" href="#">
-            <img
-              className="img-fluid"
-              src={`${process.env.PUBLIC_URL}/logo/logo-white.png`}
-              width="50"
-              alt="logo"
-            />
-          </a>
-          <div className="collapse navbar-collapse">
-            <ul>
-              <h2 className="title">Stag.io</h2>
-            </ul>
-          </div>
-        </nav>
+        <Navbar/>
 
         <div className="company">
           <div className="company-desc">

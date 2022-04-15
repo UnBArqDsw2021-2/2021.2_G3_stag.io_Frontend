@@ -1,26 +1,14 @@
 import React from "react";
+import Navbar from "../../components/navBar/NavBar"
 import "./index.css";
 
 const areasInteresse = ['#python','#bi','#sql']
 
+
 const DetalhesCandidato = () => {
   return (
     <div className="detalhesCandidato_detalhes-candidato">
-      <nav className="navbar navbar-expand-lg navbar-light">
-        <a className="navbar-brand" href="#">
-          <img
-            className="img-fluid"
-            src={`${process.env.PUBLIC_URL}/logo/logo-white.png`}
-            width="50"
-            alt="logo"
-          />
-        </a>
-        <div className="collapse navbar-collapse">
-          <ul>
-            <h2 className="title">Stag.io</h2>
-          </ul>
-        </div>
-      </nav>
+      <Navbar/>
       {/* Container que aloca a página */}
       <h1 className="detalhesCandidato_subTitle1">Nome do candidato</h1>
       <div className="detalhesCandidato_content-row1">
