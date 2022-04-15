@@ -86,9 +86,9 @@ function DescricaoVaga() {
                             <li>Nulla convallis ex at leo feugiat pretium;</li>
                             <li>Nullam eu dapibus elit, volutpat aliquam urna. Vestibulum semper erat vel dui dictum vehicula;</li>
                         </ul>
-                            <div className="container-button_descricao_vaga">
-                                <button className="btn btn-primary user_btn" type="button">Cadastrar</button>
-                            </div>
+                        <div className="container-button_descricao_vaga">
+                            <button className="btn btn-primary user_btn" type="button">Me candidatar</button>
+                        </div>
                     </h2>
                 </div>
             </div>

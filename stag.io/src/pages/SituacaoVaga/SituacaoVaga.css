@@ -1,4 +1,4 @@
-.detalhes-candidato{
+.detalhes-candidato {
     width: 100%;
     height: 100%;
 }
@@ -14,6 +14,8 @@
     height: 7.3%;
     left: 4.3%;
     top: 19.3%;
+
+    margin-left: 2%;
 
     font-family: 'Poppins';
     font-style: normal;
@@ -239,7 +241,7 @@
     position: absolute;
     width: 20%;
     height: 3%;
-    padding-top:3.3%;
+    top: 30%;
 
     font-family: 'Poppins';
     font-style: normal;
@@ -256,7 +258,7 @@
     width: 50%;
     height: 12%;
     left: 50%;
-    top: 33.1%;
+    top: 33.5%;
 
     font-family: 'Poppins';
     font-style: normal;
@@ -264,6 +266,8 @@
     font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.05em;
+
+    padding-right: 5%;
 
     color: #000000;
 }
@@ -274,7 +278,7 @@
     height: 2.8%;
     left: 50%;
     top: 54%;
-    padding-top:2.3%;
+    padding-top: 2.3%;
 
     font-family: 'Poppins';
     font-style: normal;
@@ -292,7 +296,7 @@
     height: 12%;
     left: 50%;
     top: 55.5%;
-    padding-top:3.3%;
+    padding-top: 3.3%;
 
     font-family: 'Poppins';
     font-style: normal;
@@ -300,6 +304,8 @@
     font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.05em;
+
+    padding-right: 5%;
 
     color: #000000;
 }

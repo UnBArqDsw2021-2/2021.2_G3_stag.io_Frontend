@@ -1,16 +1,21 @@
-.detalhes-candidato{
+.detalhes-candidato {
     width: 100%;
     height: 100%;
 }
 
-.container-button_descricao_vaga{
+.container-button_descricao_vaga {
     display: flex;
     padding-top: 4em;
     justify-content: flex-end;
     margin-right: 3%;
-    
+
 }
 
-.subTitle_descricao_vagas{
+.btn {
+    width: 40%;
+    height: 9%;
+}
+
+.subTitle_descricao_vagas {
     margin-left: 2%;
 }

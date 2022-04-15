@@ -7,7 +7,7 @@ function SituacaoVaga() {
         <div className="detalhes-candidato">
             <Navbar></Navbar>
             {/* Container que aloca a página */}
-            <h1 className="subTitle_situcao_vagas_situacao_vagas">
+            <h1 className="subTitle_descricao_vagas">
                 Engenheiro de Dados
             </h1>
             <div className="content-row1_situacao_vagas">
