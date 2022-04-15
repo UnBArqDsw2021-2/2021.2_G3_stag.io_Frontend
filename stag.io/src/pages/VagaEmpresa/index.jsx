@@ -5,6 +5,8 @@ import toast from 'react-hot-toast';
 import { Toaster } from 'react-hot-toast';
 import './index.css';
 
+import Navbar from "../../components/navBar/NavBar"
+
 const VagaEmpresa = (props) => {
     const { vaga } = props;
     const [ values, setValues ] = useState({
@@ -63,6 +65,8 @@ const VagaEmpresa = (props) => {
 
     return(
         <div className="vaga-empresa">
+            <Navbar/>
+
             <h1 className="subTitle">
                 Adicionar/Editar vaga
             </h1>
@@ -110,11 +114,11 @@ const VagaEmpresa = (props) => {
                         <h2 className="text">
                             Escolaridade
                         </h2>
-                        <select id="schoolLevel" name="schoolLevel" value={values.schoolLevel} onChange={onChange} className="select-list-2">
+                        <select id="schoolLevel" name="schoolLevel" value={values.schoolLevel} onChange={onChange} className="select-list-1">
                             <option value={""}>Selecione</option>
-                            <option value={"Ensino Superior"}>Ensino Superior</option>
-                            <option value={"Ensino Médio"}>Ensino Médio</option>
-                            <option value={"Ensino Fundamental"}>Ensino Fundamental</option>
+                            <option value={1}>Ensino Superior</option>
+                            <option value={2}>Ensino Médio</option>
+                            <option value={3}>Ensino Fundamental</option>
                         </select>
                         <div className="button-row">
                             <button className="btn btn-secondary d-block w-100 buttonColor" onClick={handleSubmit}>Adicionar</button>
