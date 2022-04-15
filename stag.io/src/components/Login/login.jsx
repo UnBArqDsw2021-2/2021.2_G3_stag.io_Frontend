@@ -26,7 +26,7 @@ function Popup(props){
         await schema.validate(values);
         toast.success("Usuário Logado!");
         login(values);
-        window.location.pathname = '/'
+        //window.location.pathname = '/Vagas' Só utilizar essa linha caso não desejem fazer a autenticação
     }  
     catch(error){
         if( error instanceof Yup.ValidationError){

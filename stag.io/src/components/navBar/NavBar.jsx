@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
 import './NavBar.css';
-import logo from "../../logo/logo-white.png";
+import perfil from "./assets/icone-perfil.png";
 
 
 class Navbar extends Component {
-    render() {
+    render() {      
+
         return (
             <nav className="navbar navbar-expand-lg navbar-light">
                 <a className="navbar-brand" href="/">
@@ -17,8 +18,12 @@ class Navbar extends Component {
                     <h2 className="title">Stag.io</h2>
                     </ul>
                 </div>
-                    <button className='button_Nav'>Minhas vagas</button>
-                    <button className='button_Nav'>Vagas</button>
+                    <button className='button_Nav' onClick={() => {window.location.href = 'MinhasVagas';}}>Minhas vagas</button>
+                    <button className='button_Nav' onClick={() => {window.location.href = 'Vagas';}}>Vagas</button>
+                    <a className="navbar-brand" href="/detalhesCandidato">
+                        <img className="img-fluid margin_img_logo" 
+                        src={perfil} width = "50" alt="perfil"/>
+                    </a>
             </nav>
             
         );

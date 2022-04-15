@@ -77,7 +77,7 @@ class Filtro extends Component {
                     <div className="content-column1">
                         {filterDropdown.map(vaga => (
                             <div>
-                                <Card tag={vaga.tags} title={vaga.vaga} company={vaga.empresa}></Card>
+                                <Card tag={vaga.tags} title={vaga.vaga} company={vaga.empresa} proximaPagina ={"DescricaoVaga"}></Card>
                             </div>
                         ))}
                     </div>

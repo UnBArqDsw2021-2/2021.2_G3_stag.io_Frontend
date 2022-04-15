@@ -32,6 +32,10 @@
     margin-right: 20px;
 }
 
+.margin_img_logo{
+    margin-left: 2em;
+}
+
 .button_Nav {
     font-family: 'Poppins';
     font-style: normal;

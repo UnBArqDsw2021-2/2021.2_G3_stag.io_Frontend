@@ -31,7 +31,7 @@ export const AuthProvider = ({children}) => {
       if(value.password === "secret"){ //Senha para verificar a validação de login
         console.log("Vc descobriu a senha secreta!");
         setUser(loggedUser);
-        navigate("/cadastroCandidato"); //Mudar a página de destino quando for unir o Front-end
+        navigate("/Vagas");
       }
     };
     const logout = () => {

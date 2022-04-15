@@ -4,22 +4,23 @@ import NavBarLogo from "../../components/NavBarLogo";
 import Vaga from "../../components/Vaga";
 
 
-const DetalhesCandidato = (props) => {
-    const { values }= props;
+const DetalhesEmpresa = (//props
+    ) => {
+    //const { values }= props;
 
 
     const getEmpresa = () => {
 
     }
     return(
-        <div className="container">
+        <div className="detalhes-empresa">
             <h1 className="title-candidate"> Nome da Empresa </h1>
 
             <div className="company">
                 <div className="company-desc">
                     <div className="description">
                         <div className="text-font"> Descrição </div>
-                        <div> {values. desc} </div>
+                        {/* <div> {values. desc} </div> */}
                     </div>
                     <div className="description">
                         <div className="text-font"> Localização </div>
@@ -40,4 +41,4 @@ const DetalhesCandidato = (props) => {
     );
 }
 
-export default DetalhesCandidato;
+export default DetalhesEmpresa;

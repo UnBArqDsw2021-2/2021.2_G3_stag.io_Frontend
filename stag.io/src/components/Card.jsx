@@ -28,8 +28,9 @@ class Card extends Component {
     }
 
     render() {
+
         return (
-            <div className="card-container">
+            <div className="card-container" onClick={() => {window.location.href = this.props.proximaPagina;}}>
                 <div className="left-container">
                     <div className="title_card">{this.props.title}</div>
                     <div className="company">{this.props.company}</div>

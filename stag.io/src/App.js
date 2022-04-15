@@ -45,17 +45,18 @@ function App() {
         <Route path="/cadastroEmpresa" element={<CadastroEmpresa/>}></Route>
 
 
-        <Route path="/detalhes-candidato" element={
+        <Route path="/detalhesCandidato" element={
           //<Private>
             <DetalhesCandidato/>
           //</Private>
             }></Route>
-        <Route path="/detalhes-empresa" element={
+        <Route path="/detalhesEmpresa" element={
           //<Private>
             <DetalhesEmpresa/>
+            
           //</Private>
         }></Route>
-        <Route path="/vaga-empresa" element={
+        <Route path="/vagaEmpresa" element={
           //<Private>
             <VagaEmpresa/>
           //</Private>
