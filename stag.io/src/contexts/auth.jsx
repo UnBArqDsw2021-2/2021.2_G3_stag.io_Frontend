@@ -50,6 +50,7 @@ export const AuthProvider = ({ children }) => {
 
       if (data) {
         localStorage.setItem("user", JSON.stringify(data));
+        setUser(data);
         toast.success("Usuário logado!");
 
         if (data.tipoUsuario === "empresa") {

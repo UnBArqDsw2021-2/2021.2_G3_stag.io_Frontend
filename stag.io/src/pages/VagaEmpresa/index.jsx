@@ -140,9 +140,9 @@ const VagaEmpresa = (props) => {
             className="select-list-1"
           >
             <option value={""}>Selecione</option>
-            <option value={1}>Ensino Superior</option>
-            <option value={2}>Ensino Médio</option>
-            <option value={3}>Ensino Fundamental</option>
+            <option value={1}>Ensino Médio</option>
+            <option value={2}>Ensino Superior</option>
+            <option value={3}>Ensino Técnico</option>
           </select>
           <div className="button-row">
             <button

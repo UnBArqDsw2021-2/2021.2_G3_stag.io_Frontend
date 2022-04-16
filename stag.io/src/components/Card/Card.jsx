@@ -1,44 +1,50 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import { useNavigate } from "react-router-dom";
 
-import './Card.css';
+import "./Card.css";
 
-class Card extends Component {
-    renderTag() {
-        let myTags = [];
-        myTags = this.props.tag;
+const Card = (props) => {
+  console.log(props);
+  const { key } = props;
+  const navigate = useNavigate();
 
-        if (myTags.length >= 3) {
-            return (
-                <div className="right-container">
-                    <span className="tag">{myTags[0]}</span>
-                    <span className="tag">{myTags[1]}</span>
-                    <span className="tag">{myTags[2]}</span>
-                </div>
-            )
-        }
-        if (myTags.length == 2) {
-            return (
-                <div>
-                    <span className="tag">{myTags[0]}</span>
-                    <span className="tag">{myTags[1]}</span>
-                </div>
-            )
-        }
-        return <span className="tag">{myTags[0]}</span>
+  function renderTag() {
+    let myTags = [];
+    myTags = props.tags.split("#").slice(1);
+    if (myTags.length >= 3) {
+      return (
+        <div className="right-container">
+          <span className="tag">{myTags[0]}</span>
+          <span className="tag">{myTags[1]}</span>
+          <span className="tag">{myTags[2]}</span>
+        </div>
+      );
     }
-
-    render() {
-
-        return (
-            <div className="card-container" onClick={() => { window.location.href = this.props.proximaPagina; }}>
-                <div className="left-container">
-                    <div className="title_card">{this.props.title}</div>
-                    <div className="company">{this.props.company}</div>
-                </div>
-                {this.renderTag()}
-            </div>
-        );
+    if (myTags.length == 2) {
+      return (
+        <div>
+          <span className="tag">{myTags[0]}</span>
+          <span className="tag">{myTags[1]}</span>
+        </div>
+      );
     }
-}
+    return <span className="tag">{myTags[0]}</span>;
+  }
+
+  return (
+    <div
+      className="card-container"
+      onClick={() => {
+        navigate("/DescricaoVaga", props);
+      }}
+    >
+      <div className="left-container">
+        <div className="title_card">{props.tituloVaga}</div>
+        <div className="company">{props.nomeEmpresa}</div>
+      </div>
+      {renderTag()}
+    </div>
+  );
+};
 
 export default Card;
