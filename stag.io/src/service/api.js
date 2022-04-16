@@ -8,8 +8,12 @@ export const baseURL = () => {
 
 const axios = require('axios');
 
-const api = axios.create({
+export const api = axios.create({
 	baseURL: baseURL(),
 });
 
-export default api;
+export const config = {
+  headers: {
+    "Content-Type": "application/x-www-form-urlencoded",
+  },
+};

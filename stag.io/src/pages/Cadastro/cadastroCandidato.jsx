@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import toast from "react-hot-toast";
 import { Toaster } from "react-hot-toast";
 import { AuthContext } from "../../contexts/auth";
+import Navbar from "../../components/navBar/NavBar";
 
 function CadastroCandidato() {
   const { signIn } = useContext(AuthContext);
@@ -15,7 +16,7 @@ function CadastroCandidato() {
     description: "",
     password: "",
     local: "",
-    escolaridade: "",
+    idEscolaridade: "",
     curriculo: "",
     areaInteresse: "",
   });
@@ -26,32 +27,39 @@ function CadastroCandidato() {
       cpf: Yup.string().required("CPF é obrigatório!"),
       description: Yup.string().required("Descrição é obrigatório!"),
       password: Yup.string().required("senha é obrigatório!"),
-      local: Yup.string().required("Local é obrigatória!"),
-      escolaridade: Yup.string().required("Escolaridade é obrigatória!"),
+      cidade: Yup.string().required("Cidade é obrigatória!"),
+      uf: Yup.string().required("UF é obrigatória!"),
+      instituicao: Yup.string().required("Instituição é obrigatória!"),
+      nomeCurso: Yup.string().required("Curso é obrigatória!"),
+      idEscolaridade: Yup.string().required("Escolaridade é obrigatória!"),
       curriculo: Yup.string().required("Currículo é obrigatório!"),
       areaInteresse: Yup.string().required("Áreas de interesse é obrigatório!"),
     });
 
     try {
       await schema.validate(values);
-      signIn({
+      await signIn({
         tipoUsuario: "candidato",
         nome: values.nome,
         cpf: values.cpf,
         senha: values.password,
-        cidade: values.local,
-        uf: "DF",
-        idEscolaridade: parseFloat(values.escolaridade),
-        nomeCurso: "Engenharia de Software",
-        nomeInstituicao: "Universidade de Brasilia",
+        cidade: values.cidade,
+        uf: values.uf,
+        idEscolaridade: parseFloat(values.idEscolaridade),
+        nomeCurso: values.nomeCurso,
+        nomeInstituicao: values.instituicao,
         curriculo: values.curriculo,
         areasInteresse: values.areaInteresse,
         descricaoCandidato: values.description,
       });
-      // window.location.pathname = "/";
+
+      toast.success("Candidato cadastrado com sucesso!");
+      window.location.pathname = "/";
     } catch (error) {
       if (error instanceof Yup.ValidationError) {
         toast.error(error.message);
+      } else {
+        toast.error("Erro ao cadastrar candidato!");
       }
     }
   }
@@ -64,26 +72,7 @@ function CadastroCandidato() {
   return (
     <div className="CadastroCandidato">
       {/* Barra de Navegação */}
-      <nav className="navbar navbar-expand-lg navbar-light">
-        <a className="navbar-brand" href="/">
-          <img
-            className="img-fluid"
-            src={`${process.env.PUBLIC_URL}/logo/logo-white.png`}
-            width="50"
-            alt="logo"
-          />
-        </a>
-        <div className="collapse navbar-collapse">
-          <ul>
-            <h2 className="title">Stag.io</h2>
-          </ul>
-        </div>
-        <div className="container-button-2">
-          <button className="btn btn-primary vags_btn" type="button">
-            Vagas
-          </button>
-        </div>
-      </nav>
+      <Navbar />
 
       <div className="container margin_container">
         <div className="row">
@@ -141,19 +130,46 @@ function CadastroCandidato() {
             <input
               className="text-box-type-1-user"
               id="text5"
-              placeholder="Localização"
-              name="local"
-              value={values.local}
+              placeholder="Cidade"
+              name="cidade"
+              value={values.cidade}
               onChange={handleChange}
             ></input>
             <input
               className="text-box-type-1-user"
-              id="text6"
-              placeholder="Escolaridade"
-              name="escolaridade"
-              value={values.escolaridade}
+              id="text5"
+              placeholder="UF"
+              name="uf"
+              value={values.uf}
               onChange={handleChange}
             ></input>
+            <input
+              className="text-box-type-1-user"
+              id="nomeCurso"
+              placeholder="Curso"
+              name="nomeCurso"
+              value={values.nomeCurso}
+              onChange={handleChange}
+            ></input>
+            <input
+              className="text-box-type-1-user"
+              id="text5"
+              placeholder="Instituição"
+              name="instituicao"
+              value={values.instituicao}
+              onChange={handleChange}
+            ></input>
+            <select
+              className="text-box-type-1-user"
+              id="idEscolaridade"
+              name="idEscolaridade"
+              value={values.idEscolaridade}
+              onChange={handleChange}
+            >
+              <option value={1}>Ensino Superior</option>
+              <option value={2}>Ensino Médio</option>
+              <option value={3}>Ensino Fundamental</option>
+            </select>
             <input
               className="text-box-type-1-user"
               id="text7"

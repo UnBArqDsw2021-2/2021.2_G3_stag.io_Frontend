@@ -1,16 +1,11 @@
 import React, { createContext, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
-import api from "../service/api";
+import { api, config } from "../service/api";
 
 export const AuthContext = createContext();
 
 const qs = require("qs");
-export const config = {
-  headers: {
-    "Content-Type": "application/x-www-form-urlencoded",
-  },
-};
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
@@ -32,10 +27,8 @@ export const AuthProvider = ({ children }) => {
       console.log(value);
       const { data } = await api.post(`/cadastro`, qs.stringify(value), config);
       console.log(data);
-      console.log(data == "Cadastra candidato");
 
       if (data == "Empresa cadastrada" || data == "Cadastra candidato") {
-        // toast.sucess(data);
         console.log("Sucesso!");
       } else {
         throw new Error("Erro ao cadastrar usuário");
