@@ -1,17 +1,15 @@
-detalhes-candidato{
-    height: 100%;
-    width: 100%;
-    margin: 2em;
+.detalhesCandidato_detalhes-candidato{
+    height: 100vh;
 }
 
-.subTitle1{
+.detalhesCandidato_subTitle1{
     text-align: left;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     padding-bottom: 0em;
 }
 
-.text_detalhes_candidato{
+.detalhesCandidato_text_detalhes_candidato{
     color: white;
     font-style: 'Poppins', sans-serif;
     font-size: 1.1em;
@@ -19,7 +17,7 @@ detalhes-candidato{
     padding-left: 0.5rem;
 }
 
-.text-description1{
+.detalhesCandidato_text-description1{
     color: black;
     font-style: 'Poppins', sans-serif;
     font-size: 0.9em;
@@ -27,38 +25,37 @@ detalhes-candidato{
     padding-left: 1rem;
 }
 
-.content-column1{
+.detalhesCandidato_content-column1{
     display: inline;
     height: 30em;
     /* background-color: red; */
     width: 90%;
 }
 
-.content-row1{
+.detalhesCandidato_content-row1{
     display: flex;
-    justify-content: space-between;
     padding: .5em;
     flex-wrap: wrap;
 }
 
-.content-row-line1{
+.detalhesCandidato_content-row-line1{
     background-color: black;
 }
 
-.text-box-type1-2{
-    padding: 0.6em 0.9em;
-    height: 1em;
+.detalhesCandidato_text-box-type1-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
     width: 5em;
+    margin: 0px 0.5em;
     border: 0.06em solid #E2E1E5;
     border-radius: 2.3em;
-    margin-bottom: 0.5em;
-    text-align: center;
-    align-items: center;
     background-color: white;
     color: black;
 }
 
-.label1{
+.detalhesCandidato_label1{
     padding: 0.6em 0.9em;
     height: 1em;
     width: 5em;

@@ -3,8 +3,9 @@
         "id": 1,
         "empresa": "Empresa DadosNature",
         "vaga": "Engenheiro de Dados",
-        "tag": "Ensino Superior",
+        "escolaridade": "Ensino Superior",
         "regime": "Remoto",
+        "curso": "Engenharia de Software",
         "tags": [
             "#python",
             "#data",
@@ -15,8 +16,9 @@
         "id": 2,
         "empresa": "Empresa DadosNature",
         "vaga": "Cientista de Dados",
-        "tag": "Ensino Médio",
+        "escolaridade": "Ensino Médio",
         "regime": "Remoto",
+        "curso": "Engenharia de Software",
         "tags": [
             "#python",
             "#data",
@@ -27,7 +29,8 @@
         "id": 3,
         "empresa": "Empresa DadosNature",
         "vaga": "Desenvolvedor Python",
-        "tag": "Ensino Superior",
+        "escolaridade": "Ensino Superior",
+        "curso": "Engenharia de Redes",
         "regime": "Remoto",
         "tags": [
             "#python",
@@ -39,7 +42,8 @@
         "id": 4,
         "empresa": "Empresa DadosNature",
         "vaga": "Desenvolvedor mobile",
-        "tag": "Ensino Médio",
+        "escolaridade": "Ensino Médio",
+        "curso": "Engenharia de Redes",
         "regime": "Presencial",
         "tags": [
             "#kotlin",

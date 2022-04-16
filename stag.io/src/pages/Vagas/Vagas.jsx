@@ -1,8 +1,8 @@
 import React from "react";
 import './Vagas.css';
 import Navbar from "../../components/navBar/NavBar";
-import Card from "../../components/Card";
-import Filtro from "../../components/filtro";
+import Card from "../../components/Card/Card";
+import Filtro from "../../components/Filtro/Filtro";
 
 function MinhasVagas() {
 

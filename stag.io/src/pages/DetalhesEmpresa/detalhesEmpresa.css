@@ -16,12 +16,13 @@
 
 .company{ 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin:auto;
-    padding: 3em;
-    max-width: 67em;
+    justify-content: space-around;
+}
+
+.separateBar {
+    display: block;
+    width: 1px;
+    background-color: #000000;
 }
 
 

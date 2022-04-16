@@ -1,7 +1,7 @@
 import React from "react";
 import './MinhasVagas.css';
 import Navbar from "../../components/navBar/NavBar"
-import Card from "../../components/Card"
+import Card from "../../components/Card/Card"
 
 function MinhasVagas() {
 
@@ -16,7 +16,7 @@ function MinhasVagas() {
             </h1>
 
             <div className="content-column1_minhas_vagas">
-                <Card tag={myArray} title="Cientista de Dados" company="Empresa DadosNature" proximaPagina ={"SituacaoVaga"}></Card>
+                <Card tag={myArray} title="Cientista de Dados" company="Empresa DadosNature" proximaPagina={"SituacaoVaga"}></Card>
             </div>
 
         </div>

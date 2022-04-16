@@ -10,14 +10,15 @@
     padding-left: 0.5rem;
 }
 
-.buttonLoggin {     
+.buttonLoggin {
+    display: flex;
     background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
     cursor:pointer;
-    overflow: hidden; 
-    
-       
+    justify-content: center;
+    align-items: center;
+    width: 8em;
 }
 
 .title{
@@ -48,6 +49,18 @@
     justify-content: center;
 }
 
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes {
+    display: flex;
+
+}
+
 .blackTest{
     background-color: black;
 }
@@ -70,5 +83,10 @@
 }
 
 .colorButton{
+    display: flex;
+    width: 8em;
+    height: 3em;
     background-color: #96EED5;
+    justify-content: center;
+    align-items: center;
 }
