@@ -12,7 +12,7 @@ function Inicio() {
     setButtonPopup((buttonPopup) => !buttonPopup);
   };
 
-  console.log(buttonPopup);
+  // console.log(buttonPopup);
 
   return (
     <div className="Inicio">

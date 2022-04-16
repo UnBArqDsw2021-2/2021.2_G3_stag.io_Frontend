@@ -38,23 +38,34 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  const login = (value) => {
-    console.log("login auth", value);
+  const login = async (value) => {
+    try {
+      const { data } = await api.get(
+        `/login`,
+        {
+          params: value,
+        },
+        config
+      );
 
-    const loggedUser = {
-      id: "123",
-      cpf: value.cpf,
-    };
+      if (data) {
+        localStorage.setItem("user", JSON.stringify(data));
+        toast.success("Usuário logado!");
 
-    localStorage.setItem("user", JSON.stringify(loggedUser));
-
-    if (value.password === "secret") {
-      //Senha para verificar a validação de login
-      console.log("Vc descobriu a senha secreta!");
-      setUser(loggedUser);
-      navigate("/Vagas");
+        if (data.tipoUsuario === "empresa") {
+          navigate("/detalhesEmpresa");
+        } else {
+          navigate("/Vagas");
+        }
+      } else {
+        throw new Error("Erro ao cadastrar usuário");
+      }
+    } catch (error) {
+      console.log(error);
+      toast.error("Credenciais incorretas!");
     }
   };
+
   const logout = () => {
     console.log("logout");
     localStorage.removeItem("user");
