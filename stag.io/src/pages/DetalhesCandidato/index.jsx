@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../components/navBar/NavBar"
 import "./index.css";
 
+import {api, config} from '../../service/api'
+
 const areasInteresse = ['#python','#bi','#sql']
 
-
 const DetalhesCandidato = () => {
+  const dadosUsuario = JSON.parse(localStorage.getItem('user'))
+  console.log(dadosUsuario)
   return (
     <div className="detalhesCandidato_detalhes-candidato">
       <Navbar/>
       {/* Container que aloca a página */}
-      <h1 className="detalhesCandidato_subTitle1">Nome do candidato</h1>
+      <h1 className="detalhesCandidato_subTitle1">{dadosUsuario.nomeCompleto}</h1>
       <div className="detalhesCandidato_content-row1">
         <div className="detalhesCandidato_content-column1">
           {/* Começo Descrição */}
@@ -18,10 +21,7 @@ const DetalhesCandidato = () => {
             Descrição
           </h2>
           <h2 className="detalhesCandidato_text-description1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            convallis ex at leo feugiat pretium. Nullam eu dapibus elit,
-            volutpat aliquam urna. Vestibulum semper erat vel dui dictum
-            vehicula
+            {dadosUsuario.descricaoCandidato}
           </h2>
 
           {/* Começo Escolaridade */}
@@ -33,14 +33,14 @@ const DetalhesCandidato = () => {
           <h2 className="detalhesCandidato_text_detalhes_candidato">
             Localização
           </h2>
-          <h2 className="detalhesCandidato_text-description1">Brasília - DF</h2>
+          <h2 className="detalhesCandidato_text-description1">{`${dadosUsuario.cidade} - ${dadosUsuario.uf}`}</h2>
           {/* Começo Área de interesse */}
           <h2 className="detalhesCandidato_text_detalhes_candidato">
             Área de interesse
           </h2>
           <div className="detalhesCandidato_content-row1">
             {areasInteresse.map((item, index) => (
-              <div className="detalhesCandidato_text-box-type1-2" id="">
+              <div key={index} className="detalhesCandidato_text-box-type1-2" id="">
                 {item}
               </div>
             ))}
