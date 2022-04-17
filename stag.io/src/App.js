@@ -10,7 +10,6 @@ import Inicio from "./pages/Inicio/Inicio";
 import CadastroCandidato from "./pages/Cadastro/cadastroCandidato";
 import CadastroEmpresa from "./pages/Cadastro/cadastroEmpresa";
 import { AuthProvider, AuthContext } from "./contexts/auth";
-import NavBarLogo from "./components/NavBarLogo";
 import DetalhesCandidato from "../src/pages/DetalhesCandidato";
 import DetalhesEmpresa from "../src/pages/DetalhesEmpresa";
 import VagaEmpresa from "../src/pages/VagaEmpresa";
@@ -69,7 +68,7 @@ function App() {
           ></Route>
 
           <Route path="/DescricaoVaga" element={<DescricaoVaga />}></Route>
-          <Route path="/SituacaoVaga" element={<SituacaoVaga />}></Route>
+          {/* <Route path="/SituacaoVaga" element={<SituacaoVaga />}></Route> */}
           <Route path="/MinhasVagas" element={<MinhasVagas />}></Route>
           <Route path="/Vagas" element={<Vagas />}></Route>
         </Routes>

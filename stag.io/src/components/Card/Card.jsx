@@ -5,7 +5,6 @@ import "./Card.css";
 
 const Card = (props) => {
   console.log(props);
-  const { key } = props;
   const navigate = useNavigate();
 
   function renderTag() {
@@ -35,7 +34,7 @@ const Card = (props) => {
     <div
       className="card-container"
       onClick={() => {
-        navigate("/DescricaoVaga", props);
+        navigate("/DescricaoVaga", { state: props });
       }}
     >
       <div className="left-container">
